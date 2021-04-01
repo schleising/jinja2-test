@@ -1,5 +1,6 @@
 import jinja2
 import webbrowser
+from pathlib import Path
 
 dataList = [
     {
@@ -25,9 +26,9 @@ template = environment.get_template('templates/template.html.j2')
 
 renderedPage = template.render(title='Test Page', data=dataList)
 
-outputFileName = 'output/index.html'
+outputFileName = Path('output/index.html')
 
 with open (outputFileName, 'w') as outputFile:
     outputFile.write(renderedPage)
 
-webbrowser.open(outputFileName)
+webbrowser.open(f'file://{outputFileName.resolve()}')
