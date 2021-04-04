@@ -12,6 +12,21 @@
   padding: 5px;
 }
 
+.purple-box {
+  background-color: purple;
+  flex-direction: column;
+}
+
+.salmon-box {
+  background-color: salmon;
+}
+
+.sky-blue-box {
+  background-color: skyblue;
+  flex-direction: row;
+  overflow-y: scroll;
+}
+
 .blue-box {
   background-color: dodgerblue;
 }
@@ -40,11 +55,24 @@
   color: red;
 }
 
+.green-box:hover {
+  background-color: cornflowerblue;
+}
+
 .powder-blue-box {
   background-color: powderblue;
+  margin: 4px;
+  border-color: rosybrown;
+}
+
+.powder-blue-box:hover {
+  background-color: teal;
 }
 
 a:hover {
   color: pink;
-  width: 1000px;
+}
+
+h1:hover {
+  background-color: tan;
 }
