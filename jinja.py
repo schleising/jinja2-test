@@ -22,7 +22,7 @@ dataList = [
 
 environment = jinja2.Environment(loader=jinja2.FileSystemLoader('./'))
 
-template = environment.get_template('templates/template.html.j2')
+template = environment.get_template('templates/template.html')
 
 renderedPage = template.render(title='Test Page', data=dataList)
 
